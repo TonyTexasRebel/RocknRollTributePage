@@ -1,0 +1,110 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+@font-face {
+  font-family: 'texas';
+  src: url('../fonts/ROMACE\ BLADES.otf');
+}
+
+@font-face {
+  font-family: 'rolner';
+  src: url('../fonts/ROLNER.otf');
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url('../Images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  background-color: rgba(48, 54, 56, 0.959);
+  width: 1200px;
+  height: 700px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 8px 12px 2px rgba(49, 54, 56, 0.623);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-family: texas;
+  width: 450px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 240px;
+  z-index: 1;
+}
+.title-glow {
+  color: rgb(255, 185, 138);
+  font-size: 40px;
+  font-family: texas;
+  width: 450px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 316px;
+  right: 2px;
+  z-index: 0;
+}
+
+.background-color {
+  width: 1200px;
+  height: 160px;
+  position: absolute;
+  top: 144px;
+  background-color: rgba(0, 0, 0, 0.158);
+  border-radius: 10px;
+}
+
+.artist-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 240px;
+  width: 160px;
+}
+
+.black-sabbath-icon {
+  height: 140px;
+  width: 140px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.artist-column-container {
+  position: absolute;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  bottom: 200px;
+}
